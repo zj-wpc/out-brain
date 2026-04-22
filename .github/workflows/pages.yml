@@ -29,10 +29,10 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
+          bundler: 'bundle'
 
       - name: Install dependencies
-        run: |
-          gem install jekyll jekyll-theme-minima bundler
+        run: bundle install
 
       - name: Build site
         run: bundle exec jekyll build --baseurl "${{ github.event.repository.name }}"
