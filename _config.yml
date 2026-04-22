@@ -1,0 +1,16 @@
+title: 外脑
+description: 所有 AI 输出物的存档
+baseurl: "/out-brain"
+url: "https://zj-wpc.github.io"
+github:
+  repo: zj-wpc/out-brain
+
+markdown: kramdown
+theme: minima
+timezone: Asia/Shanghai
+
+permalink: /:year/:month/:day/:title.html
+
+collections:
+  posts:
+    output: true

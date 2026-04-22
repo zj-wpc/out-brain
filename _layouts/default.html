@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} - 外脑</title>
+  <style>
+    :root {
+      --bg-primary: #1a1a1a;
+      --bg-secondary: #252525;
+      --bg-code: #2d2d2d;
+      --text-primary: #e0e0e0;
+      --text-secondary: #a0a0a0;
+      --border-color: #3a3a3a;
+      --accent-color: #4a9eff;
+      --link-color: #6db3f2;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica", Arial, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.7;
+    }
+
+    header {
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+    }
+
+    header h1 { margin: 0; color: var(--text-primary); font-size: 1.8em; }
+    header h1 a { color: var(--text-primary); text-decoration: none; }
+
+    nav { margin-top: 10px; font-size: 0.95em; }
+    nav a { color: var(--link-color); text-decoration: none; margin-right: 15px; }
+    nav a:hover { text-decoration: underline; }
+
+    footer {
+      border-top: 1px solid var(--border-color);
+      margin-top: 50px;
+      padding-top: 20px;
+      color: var(--text-secondary);
+      font-size: 0.9em;
+    }
+    footer a { color: var(--link-color); }
+
+    a { color: var(--link-color); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    h1, h2, h3 { color: var(--text-primary); margin-top: 1.5em; margin-bottom: 0.5em; }
+    h1 { font-size: 1.8em; border-bottom: 1px solid var(--border-color); padding-bottom: 0.3em; }
+    h2 { font-size: 1.5em; }
+    h3 { font-size: 1.25em; }
+
+    table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+    th, td { border: 1px solid var(--border-color); padding: 10px 12px; text-align: left; }
+    th { background: var(--bg-secondary); font-weight: 600; }
+    tr:nth-child(even) { background: var(--bg-secondary); }
+
+    img { max-width: 100%; height: auto; border-radius: 4px; }
+
+    blockquote {
+      border-left: 4px solid var(--accent-color);
+      margin: 20px 0;
+      padding: 10px 20px;
+      background: var(--bg-secondary);
+      color: var(--text-secondary);
+    }
+
+    code {
+      background: var(--bg-code);
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: "SF Mono", Monaco, Consolas, monospace;
+      font-size: 0.9em;
+    }
+
+    pre { background: var(--bg-code); padding: 15px; border-radius: 6px; overflow-x: auto; }
+    pre code { background: none; padding: 0; }
+
+    hr { border: none; border-top: 1px solid var(--border-color); margin: 30px 0; }
+
+    .post-meta { color: var(--text-secondary); font-size: 0.9em; margin-bottom: 20px; }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 8px 16px;
+      background: var(--bg-secondary);
+      border-radius: 4px;
+      color: var(--link-color);
+    }
+    .back-link:hover { background: var(--border-color); text-decoration: none; }
+
+    /* 分类标签 */
+    .category-tag {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 3px;
+      font-size: 0.85em;
+      margin-right: 6px;
+      background: var(--bg-secondary);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-color);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🧠 <a href="{{ site.baseurl }}/">外脑</a></h1>
+    <nav>
+      <a href="{{ site.baseurl }}/">首页</a>
+      <a href="{{ site.baseurl }}/posts/">存档</a>
+      <a href="https://github.com/zj-wpc/out-brain" target="_blank">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>🧠 所有 AI 输出物的存档 | 由 <a href="https://zj-wpc.github.io/out-brain/">外脑</a> 自动生成</p>
+    <p>⚡ Powered by Jekyll + CoPaw AI</p>
+  </footer>
+</body>
+</html>
