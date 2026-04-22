@@ -1,9 +1,10 @@
 title: 外脑
 description: 所有 AI 输出物的存档
-baseurl: "/out-brain"
+baseurl: ""
 url: "https://zj-wpc.github.io"
 github:
   repo: zj-wpc/out-brain
+repository: zj-wpc/out-brain
 
 markdown: kramdown
 theme: minima
